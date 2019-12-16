@@ -20,9 +20,7 @@
 	<div class="container-fluid">
 		<nav class="navbar-header">
 			<a href="./index.html" class="navbar-brand">
-<!--				<img src="favicon.ico" class="logo" alt="logo">-->
-				Energy production
-			</a>
+				<!--				<img src="favicon.ico" class="logo" alt="logo">-->Energy production </a>
 			
 			<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="navbar-toggler-icon"></span>
@@ -49,7 +47,7 @@
 				<nav>
 					<div class="nav nav-tabs" id="nav-tab" role="tablist">
 						<a class="nav-item nav-link active" id="nav-country-tab" data-toggle="tab" href="#nav-country" role="tab" aria-controls="nav-country" aria-selected="true">Country</a>
-						<a class="nav-item nav-link" id="nav-table-tab" data-toggle="tab" href="#nav-table" role="tab" aria-controls="nav-table" aria-selected="false">Table</a>
+						<a class="nav-item nav-link" id="nav-data-tab" data-toggle="tab" href="#nav-data" role="tab" aria-controls="nav-data" aria-selected="false">Data</a>
 						<a class="nav-item nav-link" id="nav-development-tab" data-toggle="tab" href="#nav-development" role="tab" aria-controls="nav-development" aria-selected="false">Development</a>
 					</div>
 				</nav>
@@ -57,70 +55,81 @@
 				<div class="tab-content" id="nav-tabContent">
 					<section class="tab-pane fade show active" id="nav-country" role="tabpanel" aria-labelledby="nav-country-tab">
 						<div class="row">
-						<div class="col-12 col-sm-8 col-md-9 col-lg-6" id="map">
-							<div class="svg" data-file="img/europe.svg"></div>
-						</div>
-						<div class="col-12 col-sm-4 col-md-3 col-lg-6">
-						<h2 class="page-header"><span id="country-title">Czechia</span> <small class="text-muted"><img src="img/flags/cz.svg" class="img-fluid flag" alt="flag"></small></h2>
-						
-						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus metus justo, sed iaculis urna rutrum ac. Sed rutrum, velit sit amet semper aliquam, libero quam pharetra orci, sed pretium quam ligula nec eros. Maecenas nisl mauris, varius nec dui sit amet, volutpat laoreet sapien. Morbi quis dapibus dolor. Ut pulvinar ipsum a nulla tristique placerat. Ut ac magna sapien. Mauris metus augue, scelerisque ac viverra in, dignissim vel urna. Aliquam vel imperdiet diam. Proin vitae enim sit amet mauris adipiscing mattis. Quisque pulvinar nisl felis, in auctor ante convallis sed.</p>
-
-							<div class="table-responsive">
-								<table class="table">
-									<thead>
-									<tr>
-										<th colspan="2">Total production of primary energy</th>
-									</tr>
-										<tr>
-											<th>2007</th>
-											<th>2017</th>
-										</tr>
-									</thead>
-									<tbody>
-									<tr>
-										<td>34,0</td>
-										<td>27,3</td>
-									</tr>
-									</tbody>
-								</table>
+							<div class="col-12 col-sm-8 col-md-9 col-lg-6" id="map">
+								<div class="svg" data-file="img/europe.svg"></div>
+								
+								<div>
+									<strong>Legend</strong>
+									<div><i class="fas fa-radiation"></i> Nuclear energy</div>
+									<div><i class="fas fa-fire"></i> Solid fossil fuels</div>
+									<div><i class="fas fa-wind"></i> Natural gas</div>
+									<div><i class="fas fa-oil-can"></i> Crude oil</div>
+									<div><i class="fas fa-fan"></i> Renewable energy</div>
+									<div><i class="fas fa-water"></i> Other</div>
+								</div>
 							</div>
-
-						<div class="table-responsive">
-							<table class="table">
-								<thead>
-									<tr>
-										<th colspan="6">Share of total production, 2017 (%)</th>
-									</tr>
-									<tr>
-										<th>Nuclear energy</th>
-										<th>Solid fossil fuels</th>
-										<th>Natural gas</th>
-										<th>Crude oil</th>
-										<th>Renewable energy</th>
-										<th>Other</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>25,7</td>
-										<td>55,5</td>
-										<td>0,7</td>
-										<td>0,4</td>
-										<td>16,3</td>
-										<td>1,5</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						
-						<img src="img/pie.png" alt="pie" class="img-fluid">
-						</div>
+							<div class="col-12 col-sm-4 col-md-3 col-lg-6">
+								<h2 class="page-header"><span id="country-title">Czechia</span> <small class="text-muted"><img src="img/flags/cz.svg" class="img-fluid flag" alt="flag"></small></h2>
+								
+								<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus metus justo, sed iaculis urna rutrum ac. Sed rutrum, velit sit amet semper aliquam, libero quam pharetra orci, sed pretium quam ligula nec eros. Maecenas nisl mauris, varius nec dui sit amet, volutpat laoreet sapien. Morbi quis dapibus dolor. Ut pulvinar ipsum a nulla tristique placerat. Ut ac magna sapien. Mauris metus augue, scelerisque ac viverra in, dignissim vel urna. Aliquam vel imperdiet diam. Proin vitae enim sit amet mauris adipiscing mattis. Quisque pulvinar nisl felis, in auctor ante convallis sed.</p>
+								
+								<div class="table-responsive">
+									<table class="table" id="table-years">
+										<thead>
+											<tr>
+												<th colspan="2">Total production of primary energy</th>
+											</tr>
+											<tr>
+												<th>2007</th>
+												<th>2017</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>34,0</td>
+												<td>27,3</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								
+								<div class="table-responsive">
+									<table class="table" id="table-share">
+										<thead>
+											<tr>
+												<th colspan="6">Share of total production, 2017 (%)</th>
+											</tr>
+											<tr>
+												<th><i class="fas fa-radiation"></i> Nuclear energy</th>
+												<th><i class="fas fa-fire"></i> Solid fossil fuels</th>
+												<th><i class="fas fa-wind"></i> Natural gas</th>
+												<th><i class="fas fa-oil-can"></i> Crude oil</th>
+												<th><i class="fas fa-fan"></i> Renewable energy</th>
+												<th><i class="fas fa-water"></i> Other</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>25,7</td>
+												<td>55,5</td>
+												<td>0,7</td>
+												<td>0,4</td>
+												<td>16,3</td>
+												<td>1,5</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								
+								<div id="pie-share"></div>
+								<img src="img/pie.png" alt="pie" class="img-fluid">
+							</div>
 						</div>
 					</section>
 					
-					<section class="tab-pane fade" id="nav-table" role="tabpanel" aria-labelledby="nav-table-tab">
+					<section class="tab-pane fade" id="nav-data" role="tabpanel" aria-labelledby="nav-data-tab">
 						<div class="table-responsive">
-							<table class="table">
+							<table class="table" id="table-production">
 								<thead>
 									<tr>
 										<th rowspan="2">Country</th>
@@ -130,337 +139,18 @@
 									<tr>
 										<th>2007</th>
 										<th>2017</th>
-										<th>Nuclear energy</th>
-										<th>Solid fossil fuels</th>
-										<th>Natural gas</th>
-										<th>Crude oil</th>
-										<th>Renewable energy</th>
-										<th>Other</th>
+										<th><i class="fas fa-radiation"></i> Nuclear energy</th>
+										<th><i class="fas fa-fire"></i> Solid fossil fuels</th>
+										<th><i class="fas fa-wind"></i> Natural gas</th>
+										<th><i class="fas fa-oil-can"></i> Crude oil</th>
+										<th><i class="fas fa-fan"></i> Renewable energy</th>
+										<th><i class="fas fa-water"></i> Other</th>
 									</tr>
 								</thead>
 								<tbody>
-									
-									<tr>
-										<td>Belgium</td>
-										<td>14,2</td>
-										<td>14,9</td>
-										<td>74,0</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>21,6</td>
-										<td>4,4</td>
-									</tr>
-									<tr>
-										<td>Bulgaria</td>
-										<td>9,9</td>
-										<td>11,7</td>
-										<td>33,8</td>
-										<td>48,6</td>
-										<td>0,6</td>
-										<td>0,2</td>
-										<td>16,6</td>
-										<td>0,3</td>
-									</tr>
-									<tr>
-										<td>Czechia</td>
-										<td>34,0</td>
-										<td>27,3</td>
-										<td>25,7</td>
-										<td>55,5</td>
-										<td>0,7</td>
-										<td>0,4</td>
-										<td>16,3</td>
-										<td>1,5</td>
-									</tr>
-									<tr>
-										<td>Denmark</td>
-										<td>27,2</td>
-										<td>15,9</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>27,4</td>
-										<td>43,6</td>
-										<td>26,5</td>
-										<td>2,4</td>
-									</tr>
-									<tr>
-										<td>Germany</td>
-										<td>136,4</td>
-										<td>115,8</td>
-										<td>17,0</td>
-										<td>34,1</td>
-										<td>5,2</td>
-										<td>1,9</td>
-										<td>36,8</td>
-										<td>5,0</td>
-									</tr>
-									<tr>
-										<td>Estonia</td>
-										<td>4,4</td>
-										<td>5,8</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>27,0</td>
-										<td>73,0</td>
-									</tr>
-									<tr>
-										<td>Ireland</td>
-										<td>1,4</td>
-										<td>4,9</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>58,6</td>
-										<td>0,0</td>
-										<td>23,5</td>
-										<td>17,9</td>
-									</tr>
-									<tr>
-										<td>Greece</td>
-										<td>10,2</td>
-										<td>7,5</td>
-										<td>0,0</td>
-										<td>60,9</td>
-										<td>0,1</td>
-										<td>1,9</td>
-										<td>37,1</td>
-										<td>0,0</td>
-									</tr>
-									<tr>
-										<td>Spain</td>
-										<td>30,1</td>
-										<td>34,2</td>
-										<td>44,2</td>
-										<td>3,3</td>
-										<td>0,1</td>
-										<td>0,4</td>
-										<td>51,3</td>
-										<td>0,8</td>
-									</tr>
-									<tr>
-										<td>France</td>
-										<td>133,5</td>
-										<td>132,2</td>
-										<td>78,6</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>0,6</td>
-										<td>19,6</td>
-										<td>1,2</td>
-									</tr>
-									<tr>
-										<td>Croatia</td>
-										<td>4,9</td>
-										<td>4,2</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>29,2</td>
-										<td>16,7</td>
-										<td>52,1</td>
-										<td>1,9</td>
-									</tr>
-									<tr>
-										<td>Italy</td>
-										<td>31,1</td>
-										<td>36,7</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>12,4</td>
-										<td>11,3</td>
-										<td>72,4</td>
-										<td>4,0</td>
-									</tr>
-									<tr>
-										<td>Cyprus</td>
-										<td>0,1</td>
-										<td>0,1</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>97,5</td>
-										<td>2,5</td>
-									</tr>
-									<tr>
-										<td>Latvia</td>
-										<td>1,8</td>
-										<td>2,6</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>99,7</td>
-										<td>0,3</td>
-									</tr>
-									<tr>
-										<td>Lithuania</td>
-										<td>3,8</td>
-										<td>1,8</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>3,2</td>
-										<td>94,4</td>
-										<td>2,3</td>
-									</tr>
-									<tr>
-										<td>Luxembourg</td>
-										<td>0,1</td>
-										<td>0,2</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>80,8</td>
-										<td>19,2</td>
-									</tr>
-									<tr>
-										<td>Hungary</td>
-										<td>10,8</td>
-										<td>11,1</td>
-										<td>36,6</td>
-										<td>11,5</td>
-										<td>12,7</td>
-										<td>6,4</td>
-										<td>28,6</td>
-										<td>4,2</td>
-									</tr>
-									<tr>
-										<td>Malta</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>100,0</td>
-										<td>0,0</td>
-									</tr>
-									<tr>
-										<td>Netherlands</td>
-										<td>60,2</td>
-										<td>41,7</td>
-										<td>1,9</td>
-										<td>0,0</td>
-										<td>79,5</td>
-										<td>2,3</td>
-										<td>13,4</td>
-										<td>2,8</td>
-									</tr>
-									<tr>
-										<td>Austria</td>
-										<td>10,6</td>
-										<td>12,3</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>8,5</td>
-										<td>5,7</td>
-										<td>79,6</td>
-										<td>6,2</td>
-									</tr>
-									<tr>
-										<td>Poland</td>
-										<td>71,7</td>
-										<td>64,0</td>
-										<td>0,0</td>
-										<td>77,4</td>
-										<td>5,5</td>
-										<td>1,6</td>
-										<td>14,2</td>
-										<td>1,4</td>
-									</tr>
-									<tr>
-										<td>Portugal</td>
-										<td>4,6</td>
-										<td>5,2</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>97,1</td>
-										<td>2,9</td>
-									</tr>
-									<tr>
-										<td>Romania</td>
-										<td>27,8</td>
-										<td>25,5</td>
-										<td>11,4</td>
-										<td>17,5</td>
-										<td>33,5</td>
-										<td>13,8</td>
-										<td>22,9</td>
-										<td>0,9</td>
-									</tr>
-									<tr>
-										<td>Slovenia</td>
-										<td>3,4</td>
-										<td>3,5</td>
-										<td>42,3</td>
-										<td>26,6</td>
-										<td>0,2</td>
-										<td>0,0</td>
-										<td>29,4</td>
-										<td>1,5</td>
-									</tr>
-									<tr>
-										<td>Slovakia</td>
-										<td>5,8</td>
-										<td>6,4</td>
-										<td>62,6</td>
-										<td>7,0</td>
-										<td>1,8</td>
-										<td>0,1</td>
-										<td>25,4</td>
-										<td>3,1</td>
-									</tr>
-									<tr>
-										<td>Finland</td>
-										<td>16,0</td>
-										<td>18,1</td>
-										<td>29,8</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>64,5</td>
-										<td>5,6</td>
-									</tr>
-									<tr>
-										<td>Sweden</td>
-										<td>32,9</td>
-										<td>36,6</td>
-										<td>44,7</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>0,0</td>
-										<td>53,0</td>
-										<td>2,3</td>
-									</tr>
-									<tr>
-										<td>United Kingdom</td>
-										<td>175,8</td>
-										<td>118,1</td>
-										<td>12,8</td>
-										<td>1,6</td>
-										<td>30,5</td>
-										<td>37,8</td>
-										<td>13,2</td>
-										<td>4,2</td>
-									</tr>
 								</tbody>
 								<tfoot>
-									<tr>
-										<td>EU-28</td>
-										<td>862,9</td>
-										<td>758,2</td>
-										<td>27,8</td>
-										<td>16,4</td>
-										<td>13,6</td>
-										<td>8,8</td>
-										<td>29,9</td>
-										<td>3,5</td>
-									</tr>
+								
 								</tfoot>
 							</table>
 						</div>
@@ -598,6 +288,7 @@
 	</div>
 </main>
 
+<script src="./node_modules/d3/dist/d3.min.js"></script>
 <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./node_modules/@hermajan/booty/js/booty.js"></script>

@@ -10,6 +10,12 @@ table {
 		text-align: center;
 		vertical-align: middle;
 	}
+	
+	tfoot {
+		td {
+			font-style: italic;
+		}
+	}
 }
 
 #map {
@@ -32,7 +38,28 @@ table {
 }
 
 .flag {
-	height: 2em;
-	float: right;
 	border: 1px solid black;
+}
+
+#nav-country {
+	.flag {
+		height: 2em;
+		float: right;
+	}
+}
+
+#nav-data {
+	table {
+		.flag {
+			width: 2em;
+		}
+		
+		tfoot {
+			tr:first-child {
+				td {
+					border-top: 1px solid black;
+				}
+			}
+		}
+	}
 }
