@@ -1,0 +1,38 @@
+@import "variables";
+@import "libraries";
+
+main {
+	padding: 0 !important;
+}
+
+table {
+	th {
+		text-align: center;
+		vertical-align: middle;
+	}
+}
+
+#map {
+	svg {
+		width: 100%;
+		height: auto;
+		
+		g, path {
+			fill: #C0C0C0 !important;
+			
+			&.eu, &.eu path {
+				fill: $eu-azure !important;
+				
+				&.selected {
+					fill: $eu-gold !important;
+				}
+			}
+		}
+	}
+}
+
+.flag {
+	height: 2em;
+	float: right;
+	border: 1px solid black;
+}
