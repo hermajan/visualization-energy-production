@@ -1,6 +1,7 @@
-var production;
+var production, legend;
 $.getJSON("data/numbers.json", function (json) {
-	production = json;
+	legend = json["legend"];
+	production = json["production"];
 }).done(function () {
 	run();
 }).fail(function () {
@@ -8,32 +9,32 @@ $.getJSON("data/numbers.json", function (json) {
 });
 
 function renderPie(key) {
-// set the dimensions and margins of the graph
-	var width = 450,
-		height = 450,
-		margin = 40;
+	// set the dimensions and margins of the graph
+	var width = 450, height = 450, margin = 40;
 
-// The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
+	// The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
 	var radius = Math.min(width, height) / 2 - margin;
-
+	
+	// append the svg object to the div
 	d3.select("#pie-share").select("svg").remove();
-// append the svg object to the div called 'my_dataviz'
 	var svg = d3.select("#pie-share")
-		.append("svg")
-		.attr("width", width)
-		.attr("height", height)
-		.append("g")
-		.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+		.append("svg").attr("width", width).attr("height", height)
+		.append("g").attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 // Create dummy data
 	var data = {
-		nuclear: parseFloat(production[key]["nuclear"]), fossil: parseFloat(production[key]["fossil"]), gas: parseFloat(production[key]["gas"]), oil: parseFloat(production[key]["oil"]), renewable: parseFloat(production[key]["renewable"]), other: parseFloat(production[key]["other"])
+		nuclear: parseFloat(production[key]["nuclear"]),
+		fossil: parseFloat(production[key]["fossil"]),
+		gas: parseFloat(production[key]["gas"]),
+		oil: parseFloat(production[key]["oil"]),
+		renewable: parseFloat(production[key]["renewable"]),
+		other: parseFloat(production[key]["other"])
 	};
 
 // set the color scale
 	var color = d3.scaleOrdinal()
 		.domain(data)
-		.range(d3.schemeSet2);
+		.range(["yellow"]);
 
 // Compute the position of each group on the pie:
 	var pie = d3.pie()
@@ -55,8 +56,9 @@ function renderPie(key) {
 		.enter()
 		.append('path')
 		.attr('d', arcGenerator)
-		.attr('fill', function (d) {
-			return (color(d.data.key))
+		.style('fill', function (d) {
+			console.log(d.data.key);
+			return (color(d.data.key));
 		})
 		.attr("stroke", "black")
 		.style("stroke-width", "2px")

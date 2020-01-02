@@ -1,321 +1,355 @@
 {
-	"at": {
-		"2007": "10,6",
-		"2017": "12,3",
-		"name": "Austria",
-		"nuclear": "0,0",
-		"fossil": "0,0",
-		"gas": "8,5",
-		"oil": "5,7",
-		"renewable": "79,6",
-		"other": "6,2"
+	"legend": {
+		"nuclear": {
+			"title": "Nuclear energy",
+			"fa": "fas fa-radiation",
+			"color": "yellow"
+		},
+		"fossil": {
+			"title": "Solid fossil fuels",
+			"fa": "fas fa-fire",
+			"color": "yellow"
+		},
+		"gas": {
+			"title": "Natural gas",
+			"fa": "fas fa-wind",
+			"color": "yellow"
+		},
+		"oil": {
+			"title": "Crude oil",
+			"fa": "fas fa-oil-can",
+			"color": "yellow"
+		},
+		"renewable": {
+			"title": "Renewable energy",
+			"fa": "fas fa-fan",
+			"color": "yellow"
+		},
+		"other": {
+			"title": "Other",
+			"fa": "fas fa-water",
+			"color": "yellow"
+		}
 	},
-	"be": {
-		"2007": "14,2",
-		"2017": "14,9",
-		"name": "Belgium",
-		"nuclear": "74,0",
-		"fossil": "0,0",
-		"gas": "0,0",
-		"oil": "0,0",
-		"renewable": "21,6",
-		"other": "4,4"
-	},
-	"bg": {
-		"2007": "9,9",
-		"2017": "11,7",
-		"name": "Bulgaria",
-		"nuclear": "33,8",
-		"fossil": "48,6",
-		"gas": "0,6",
-		"oil": "0,2",
-		"renewable": "16,6",
-		"other": "0,3"
-	},
-	"hr": {
-		"2007": "4,9",
-		"2017": "4,2",
-		"name": "Croatia",
-		"nuclear": "0,0",
-		"fossil": "0,0",
-		"gas": "29,2",
-		"oil": "16,7",
-		"renewable": "52,1",
-		"other": "1,9"
-	},
-	"cy": {
-		"2007": "0,1",
-		"2017": "0,1",
-		"name": "Cyprus",
-		"nuclear": "0,0",
-		"fossil": "0,0",
-		"gas": "0,0",
-		"oil": "0,0",
-		"renewable": "97,5",
-		"other": "2,5"
-	},
-	"cz": {
-		"2007": "34,0",
-		"2017": "27,3",
-		"name": "Czechia",
-		"nuclear": "25,7",
-		"fossil": "55,5",
-		"gas": "0,7",
-		"oil": "0,4",
-		"renewable": "16,3",
-		"other": "1,5"
-	},
-	"dk": {
-		"2007": "27,2",
-		"2017": "15,9",
-		"name": "Denmark",
-		"nuclear": "0,0",
-		"fossil": "0,0",
-		"gas": "27,4",
-		"oil": "43,6",
-		"renewable": "26,5",
-		"other": "2,4"
-	},
-	"ee": {
-		"2007": "4,4",
-		"2017": "5,8",
-		"name": "Estonia",
-		"nuclear": "0,0",
-		"fossil": "0,0",
-		"gas": "0,0",
-		"oil": "0,0",
-		"renewable": "27,0",
-		"other": "73,0"
-	},
-	"fi": {
-		"2007": "16,0",
-		"2017": "18,1",
-		"name": "Finland",
-		"nuclear": "29,8",
-		"fossil": "0,0",
-		"gas": "0,0",
-		"oil": "0,0",
-		"renewable": "64,5",
-		"other": "5,6"
-	},
-	"fr": {
-		"2007": "133,5",
-		"2017": "132,2",
-		"name": "France",
-		"nuclear": "78,6",
-		"fossil": "0,0",
-		"gas": "0,0",
-		"oil": "0,6",
-		"renewable": "19,6",
-		"other": "1,2"
-	},
-	"de": {
-		"2007": "136,4",
-		"2017": "115,8",
-		"name": "Germany",
-		"nuclear": "17,0",
-		"fossil": "34,1",
-		"gas": "5,2",
-		"oil": "1,9",
-		"renewable": "36,8",
-		"other": "5,0"
-	},
-	"gr": {
-		"2007": "10,2",
-		"2017": "7,5",
-		"name": "Greece",
-		"nuclear": "0,0",
-		"fossil": "60,9",
-		"gas": "0,1",
-		"oil": "1,9",
-		"renewable": "37,1",
-		"other": "0,0"
-	},
-	"hu": {
-		"2007": "10,8",
-		"2017": "11,1",
-		"name": "Hungary",
-		"nuclear": "36,6",
-		"fossil": "11,5",
-		"gas": "12,7",
-		"oil": "6,4",
-		"renewable": "28,6",
-		"other": "4,2"
-	},
-	"ie": {
-		"2007": "1,4",
-		"2017": "4,9",
-		"name": "Ireland",
-		"nuclear": "0,0",
-		"fossil": "0,0",
-		"gas": "58,6",
-		"oil": "0,0",
-		"renewable": "23,5",
-		"other": "17,9"
-	},
-	"it": {
-		"2007": "31,1",
-		"2017": "36,7",
-		"name": "Italy",
-		"nuclear": "0,0",
-		"fossil": "0,0",
-		"gas": "12,4",
-		"oil": "11,3",
-		"renewable": "72,4",
-		"other": "4,0"
-	},
-	"lv": {
-		"2007": "1,8",
-		"2017": "2,6",
-		"name": "Latvia",
-		"nuclear": "0,0",
-		"fossil": "0,0",
-		"gas": "0,0",
-		"oil": "0,0",
-		"renewable": "99,7",
-		"other": "0,3"
-	},
-	"lt": {
-		"2007": "3,8",
-		"2017": "1,8",
-		"name": "Lithuania",
-		"nuclear": "0,0",
-		"fossil": "0,0",
-		"gas": "0,0",
-		"oil": "3,2",
-		"renewable": "94,4",
-		"other": "2,3"
-	},
-	"lu": {
-		"2007": "0,1",
-		"2017": "0,2",
-		"name": "Luxembourg",
-		"nuclear": "0,0",
-		"fossil": "0,0",
-		"gas": "0,0",
-		"oil": "0,0",
-		"renewable": "80,8",
-		"other": "19,2"
-	},
-	"mt": {
-		"2007": "0,0",
-		"2017": "0,0",
-		"name": "Malta",
-		"nuclear": "0,0",
-		"fossil": "0,0",
-		"gas": "0,0",
-		"oil": "0,0",
-		"renewable": "100,0",
-		"other": "0,0"
-	},
-	"nl": {
-		"2007": "60,2",
-		"2017": "41,7",
-		"name": "Netherlands",
-		"nuclear": "1,9",
-		"fossil": "0,0",
-		"gas": "79,5",
-		"oil": "2,3",
-		"renewable": "13,4",
-		"other": "2,8"
-	},
-	"pl": {
-		"2007": "71,7",
-		"2017": "64,0",
-		"name": "Poland",
-		"nuclear": "0,0",
-		"fossil": "77,4",
-		"gas": "5,5",
-		"oil": "1,6",
-		"renewable": "14,2",
-		"other": "1,4"
-	},
-	"pt": {
-		"2007": "4,6",
-		"2017": "5,2",
-		"name": "Portugal",
-		"nuclear": "0,0",
-		"fossil": "0,0",
-		"gas": "0,0",
-		"oil": "0,0",
-		"renewable": "97,1",
-		"other": "2,9"
-	},
-	"ro": {
-		"2007": "27,8",
-		"2017": "25,5",
-		"name": "Romania",
-		"nuclear": "11,4",
-		"fossil": "17,5",
-		"gas": "33,5",
-		"oil": "13,8",
-		"renewable": "22,9",
-		"other": "0,9"
-	},
-	"sk": {
-		"2007": "5,8",
-		"2017": "6,4",
-		"name": "Slovakia",
-		"nuclear": "62,6",
-		"fossil": "7,0",
-		"gas": "1,8",
-		"oil": "0,1",
-		"renewable": "25,4",
-		"other": "3,1"
-	},
-	"sl": {
-		"2007": "3,4",
-		"2017": "3,5",
-		"name": "Slovenia",
-		"nuclear": "42,3",
-		"fossil": "26,6",
-		"gas": "0,2",
-		"oil": "0,0",
-		"renewable": "29,4",
-		"other": "1,5"
-	},
-	"es": {
-		"2007": "30,1",
-		"2017": "34,2",
-		"name": "Spain",
-		"nuclear": "44,2",
-		"fossil": "3,3",
-		"gas": "0,1",
-		"oil": "0,4",
-		"renewable": "51,3",
-		"other": "0,8"
-	},
-	"se": {
-		"2007": "32,9",
-		"2017": "36,6",
-		"name": "Sweden",
-		"nuclear": "44,7",
-		"fossil": "0,0",
-		"gas": "0,0",
-		"oil": "0,0",
-		"renewable": "53,0",
-		"other": "2,3"
-	},
-	"uk": {
-		"2007": "175,8",
-		"2017": "118,1",
-		"name": "United Kingdom",
-		"nuclear": "12,8",
-		"fossil": "1,6",
-		"gas": "30,5",
-		"oil": "37,8",
-		"renewable": "13,2",
-		"other": "4,2"
-	},
-	"eu": {
-		"2007": "862,9",
-		"2017": "758,2",
-		"name": "European Union",
-		"nuclear": "27,8",
-		"fossil": "16,4",
-		"gas": "13,6",
-		"oil": "8,8",
-		"renewable": "29,9",
-		"other": "3,5"
+	"production": {
+		"at": {
+			"2007": "10,6",
+			"2017": "12,3",
+			"name": "Austria",
+			"nuclear": "0,0",
+			"fossil": "0,0",
+			"gas": "8,5",
+			"oil": "5,7",
+			"renewable": "79,6",
+			"other": "6,2"
+		},
+		"be": {
+			"2007": "14,2",
+			"2017": "14,9",
+			"name": "Belgium",
+			"nuclear": "74,0",
+			"fossil": "0,0",
+			"gas": "0,0",
+			"oil": "0,0",
+			"renewable": "21,6",
+			"other": "4,4"
+		},
+		"bg": {
+			"2007": "9,9",
+			"2017": "11,7",
+			"name": "Bulgaria",
+			"nuclear": "33,8",
+			"fossil": "48,6",
+			"gas": "0,6",
+			"oil": "0,2",
+			"renewable": "16,6",
+			"other": "0,3"
+		},
+		"hr": {
+			"2007": "4,9",
+			"2017": "4,2",
+			"name": "Croatia",
+			"nuclear": "0,0",
+			"fossil": "0,0",
+			"gas": "29,2",
+			"oil": "16,7",
+			"renewable": "52,1",
+			"other": "1,9"
+		},
+		"cy": {
+			"2007": "0,1",
+			"2017": "0,1",
+			"name": "Cyprus",
+			"nuclear": "0,0",
+			"fossil": "0,0",
+			"gas": "0,0",
+			"oil": "0,0",
+			"renewable": "97,5",
+			"other": "2,5"
+		},
+		"cz": {
+			"2007": "34,0",
+			"2017": "27,3",
+			"name": "Czechia",
+			"nuclear": "25,7",
+			"fossil": "55,5",
+			"gas": "0,7",
+			"oil": "0,4",
+			"renewable": "16,3",
+			"other": "1,5"
+		},
+		"dk": {
+			"2007": "27,2",
+			"2017": "15,9",
+			"name": "Denmark",
+			"nuclear": "0,0",
+			"fossil": "0,0",
+			"gas": "27,4",
+			"oil": "43,6",
+			"renewable": "26,5",
+			"other": "2,4"
+		},
+		"ee": {
+			"2007": "4,4",
+			"2017": "5,8",
+			"name": "Estonia",
+			"nuclear": "0,0",
+			"fossil": "0,0",
+			"gas": "0,0",
+			"oil": "0,0",
+			"renewable": "27,0",
+			"other": "73,0"
+		},
+		"fi": {
+			"2007": "16,0",
+			"2017": "18,1",
+			"name": "Finland",
+			"nuclear": "29,8",
+			"fossil": "0,0",
+			"gas": "0,0",
+			"oil": "0,0",
+			"renewable": "64,5",
+			"other": "5,6"
+		},
+		"fr": {
+			"2007": "133,5",
+			"2017": "132,2",
+			"name": "France",
+			"nuclear": "78,6",
+			"fossil": "0,0",
+			"gas": "0,0",
+			"oil": "0,6",
+			"renewable": "19,6",
+			"other": "1,2"
+		},
+		"de": {
+			"2007": "136,4",
+			"2017": "115,8",
+			"name": "Germany",
+			"nuclear": "17,0",
+			"fossil": "34,1",
+			"gas": "5,2",
+			"oil": "1,9",
+			"renewable": "36,8",
+			"other": "5,0"
+		},
+		"gr": {
+			"2007": "10,2",
+			"2017": "7,5",
+			"name": "Greece",
+			"nuclear": "0,0",
+			"fossil": "60,9",
+			"gas": "0,1",
+			"oil": "1,9",
+			"renewable": "37,1",
+			"other": "0,0"
+		},
+		"hu": {
+			"2007": "10,8",
+			"2017": "11,1",
+			"name": "Hungary",
+			"nuclear": "36,6",
+			"fossil": "11,5",
+			"gas": "12,7",
+			"oil": "6,4",
+			"renewable": "28,6",
+			"other": "4,2"
+		},
+		"ie": {
+			"2007": "1,4",
+			"2017": "4,9",
+			"name": "Ireland",
+			"nuclear": "0,0",
+			"fossil": "0,0",
+			"gas": "58,6",
+			"oil": "0,0",
+			"renewable": "23,5",
+			"other": "17,9"
+		},
+		"it": {
+			"2007": "31,1",
+			"2017": "36,7",
+			"name": "Italy",
+			"nuclear": "0,0",
+			"fossil": "0,0",
+			"gas": "12,4",
+			"oil": "11,3",
+			"renewable": "72,4",
+			"other": "4,0"
+		},
+		"lv": {
+			"2007": "1,8",
+			"2017": "2,6",
+			"name": "Latvia",
+			"nuclear": "0,0",
+			"fossil": "0,0",
+			"gas": "0,0",
+			"oil": "0,0",
+			"renewable": "99,7",
+			"other": "0,3"
+		},
+		"lt": {
+			"2007": "3,8",
+			"2017": "1,8",
+			"name": "Lithuania",
+			"nuclear": "0,0",
+			"fossil": "0,0",
+			"gas": "0,0",
+			"oil": "3,2",
+			"renewable": "94,4",
+			"other": "2,3"
+		},
+		"lu": {
+			"2007": "0,1",
+			"2017": "0,2",
+			"name": "Luxembourg",
+			"nuclear": "0,0",
+			"fossil": "0,0",
+			"gas": "0,0",
+			"oil": "0,0",
+			"renewable": "80,8",
+			"other": "19,2"
+		},
+		"mt": {
+			"2007": "0,0",
+			"2017": "0,0",
+			"name": "Malta",
+			"nuclear": "0,0",
+			"fossil": "0,0",
+			"gas": "0,0",
+			"oil": "0,0",
+			"renewable": "100,0",
+			"other": "0,0"
+		},
+		"nl": {
+			"2007": "60,2",
+			"2017": "41,7",
+			"name": "Netherlands",
+			"nuclear": "1,9",
+			"fossil": "0,0",
+			"gas": "79,5",
+			"oil": "2,3",
+			"renewable": "13,4",
+			"other": "2,8"
+		},
+		"pl": {
+			"2007": "71,7",
+			"2017": "64,0",
+			"name": "Poland",
+			"nuclear": "0,0",
+			"fossil": "77,4",
+			"gas": "5,5",
+			"oil": "1,6",
+			"renewable": "14,2",
+			"other": "1,4"
+		},
+		"pt": {
+			"2007": "4,6",
+			"2017": "5,2",
+			"name": "Portugal",
+			"nuclear": "0,0",
+			"fossil": "0,0",
+			"gas": "0,0",
+			"oil": "0,0",
+			"renewable": "97,1",
+			"other": "2,9"
+		},
+		"ro": {
+			"2007": "27,8",
+			"2017": "25,5",
+			"name": "Romania",
+			"nuclear": "11,4",
+			"fossil": "17,5",
+			"gas": "33,5",
+			"oil": "13,8",
+			"renewable": "22,9",
+			"other": "0,9"
+		},
+		"sk": {
+			"2007": "5,8",
+			"2017": "6,4",
+			"name": "Slovakia",
+			"nuclear": "62,6",
+			"fossil": "7,0",
+			"gas": "1,8",
+			"oil": "0,1",
+			"renewable": "25,4",
+			"other": "3,1"
+		},
+		"sl": {
+			"2007": "3,4",
+			"2017": "3,5",
+			"name": "Slovenia",
+			"nuclear": "42,3",
+			"fossil": "26,6",
+			"gas": "0,2",
+			"oil": "0,0",
+			"renewable": "29,4",
+			"other": "1,5"
+		},
+		"es": {
+			"2007": "30,1",
+			"2017": "34,2",
+			"name": "Spain",
+			"nuclear": "44,2",
+			"fossil": "3,3",
+			"gas": "0,1",
+			"oil": "0,4",
+			"renewable": "51,3",
+			"other": "0,8"
+		},
+		"se": {
+			"2007": "32,9",
+			"2017": "36,6",
+			"name": "Sweden",
+			"nuclear": "44,7",
+			"fossil": "0,0",
+			"gas": "0,0",
+			"oil": "0,0",
+			"renewable": "53,0",
+			"other": "2,3"
+		},
+		"uk": {
+			"2007": "175,8",
+			"2017": "118,1",
+			"name": "United Kingdom",
+			"nuclear": "12,8",
+			"fossil": "1,6",
+			"gas": "30,5",
+			"oil": "37,8",
+			"renewable": "13,2",
+			"other": "4,2"
+		},
+		"eu": {
+			"2007": "862,9",
+			"2017": "758,2",
+			"name": "European Union",
+			"nuclear": "27,8",
+			"fossil": "16,4",
+			"gas": "13,6",
+			"oil": "8,8",
+			"renewable": "29,9",
+			"other": "3,5"
+		}
 	}
 }
