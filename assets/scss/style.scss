@@ -63,3 +63,21 @@ table {
 		}
 	}
 }
+
+#pie-share {
+	svg {
+		path {
+			stroke: white;
+			stroke-width: 4;
+		}
+		
+		text {
+			text-anchor: middle;
+			alignment-baseline: middle;
+			
+			tspan {
+				fill: black;
+			}
+		}
+	}
+}

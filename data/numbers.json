@@ -3,32 +3,32 @@
 		"nuclear": {
 			"title": "Nuclear energy",
 			"fa": "fas fa-radiation",
-			"color": "yellow"
+			"color": "gold"
 		},
 		"fossil": {
 			"title": "Solid fossil fuels",
 			"fa": "fas fa-fire",
-			"color": "yellow"
+			"color": "red"
 		},
 		"gas": {
 			"title": "Natural gas",
 			"fa": "fas fa-wind",
-			"color": "yellow"
+			"color": "orange"
 		},
 		"oil": {
 			"title": "Crude oil",
 			"fa": "fas fa-oil-can",
-			"color": "yellow"
+			"color": "black"
 		},
 		"renewable": {
 			"title": "Renewable energy",
 			"fa": "fas fa-fan",
-			"color": "yellow"
+			"color": "green"
 		},
 		"other": {
 			"title": "Other",
 			"fa": "fas fa-water",
-			"color": "yellow"
+			"color": "grey"
 		}
 	},
 	"production": {
@@ -296,7 +296,7 @@
 			"renewable": "25,4",
 			"other": "3,1"
 		},
-		"sl": {
+		"si": {
 			"2007": "3,4",
 			"2017": "3,5",
 			"name": "Slovenia",
@@ -351,5 +351,13 @@
 			"renewable": "29,9",
 			"other": "3,5"
 		}
+	},
+	"development": {
+			"nuclear": "12,8",
+			"fossil": "1,6",
+			"gas": "30,5",
+			"oil": "37,8",
+			"renewable": "13,2",
+			"other": "4,2"
 	}
 }

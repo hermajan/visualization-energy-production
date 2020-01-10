@@ -5,11 +5,15 @@
 	"author": "",
 	"license": "MIT",
 	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
 	"dependencies": {
-		"d3": "^5.14.1",
 		"@fortawesome/fontawesome-free": "^5.1.1",
 		"@hermajan/booty": "https://github.com/hermajan/booty",
 		"@hermajan/facolors": "^0.1.0",
+		"d3": "^5.14.1",
+		"express": "^4.17.1",
 		"jquery": "^3.4.0"
 	},
 	"devDependencies": {
