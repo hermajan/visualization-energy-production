@@ -8,6 +8,11 @@ $.getJSON("data/numbers.json", function(json) {
 	console.log("error");
 });
 
+var development;
+d3.csv("data/development.csv").then(function(data) {
+	development = data;
+});
+
 function renderPie(country) {
 	var size = 500;
 	
@@ -65,6 +70,35 @@ function renderPie(country) {
 		.text(d => d.data.value + " %");
 }
 
+function renderPie2(country) {
+	var shares = Object.keys(legend);
+	var values = shares.map(key => parseFloat(production[country][key].replace(",", ".")));
+	var names = shares.map(key => legend[key]["title"]);
+	var colors = shares.map(key => legend[key]["color"]);
+	console.log(values, names, colors);
+	console.log(development);
+	
+	var data = [{
+		type: "pie",
+		values: values,
+		labels: names,
+		textinfo: "label",
+		textposition: "outside",
+		automargin: true,
+		marker: {
+			colors: colors
+		}
+	}];
+	
+	var layout = {
+		autosize: true,
+		// height: 400, width: 400,
+		// margin: {"t": 100, "b": 100, "l": 100, "r": 100},
+		showlegend: false
+	};
+	
+	Plotly.newPlot('pie-share', data, layout, {displayModeBar: false});
+}
 
 function showCountry(country) {
 	window.history.replaceState("", document.title, "#" + country);
@@ -86,7 +120,8 @@ function showCountry(country) {
 	var rowShare = $("<tr></tr>").append(nuclear, fossil, gas, oil, renewable, other);
 	$("#table-share tbody").html(rowShare);
 	
-	renderPie(country);
+	// renderPie(country);
+	renderPie2(country);
 }
 
 function showData(country) {
