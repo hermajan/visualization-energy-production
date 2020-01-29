@@ -1,0 +1,123 @@
+{
+	"countries": {
+		"at": {
+			"name": "Austria"
+		},
+		"be": {
+			"name": "Belgium"
+		},
+		"bg": {
+			"name": "Bulgaria"
+		},
+		"cy": {
+			"name": "Cyprus"
+		},
+		"cz": {
+			"name": "Czechia"
+		},
+		"de": {
+			"name": "Germany"
+		},
+		"dk": {
+			"name": "Denmark"
+		},
+		"ee": {
+			"name": "Estonia"
+		},
+		"es": {
+			"name": "Spain"
+		},
+		"eu": {
+			"name": "European Union"
+		},
+		"fi": {
+			"name": "Finland"
+		},
+		"fr": {
+			"name": "France"
+		},
+		"gr": {
+			"name": "Greece"
+		},
+		"hr": {
+			"name": "Croatia"
+		},
+		"hu": {
+			"name": "Hungary"
+		},
+		"ie": {
+			"name": "Ireland"
+		},
+		"it": {
+			"name": "Italy"
+		},
+		"lt": {
+			"name": "Lithuania"
+		},
+		"lu": {
+			"name": "Luxembourg"
+		},
+		"lv": {
+			"name": "Latvia"
+		},
+		"mt": {
+			"name": "Malta"
+		},
+		"nl": {
+			"name": "Netherlands"
+		},
+		"pl": {
+			"name": "Poland"
+		},
+		"pt": {
+			"name": "Portugal"
+		},
+		"ro": {
+			"name": "Romania"
+		},
+		"se": {
+			"name": "Sweden"
+		},
+		"si": {
+			"name": "Slovenia"
+		},
+		"sk": {
+			"name": "Slovakia"
+		},
+		"gb": {
+			"name": "United Kingdom"
+		}
+	},
+	"legend": {
+		"nuclear": {
+			"title": "Nuclear energy",
+			"fa": "fas fa-radiation",
+			"color": "gold"
+		},
+		"fossil": {
+			"title": "Solid fossil fuels",
+			"fa": "fas fa-fire",
+			"color": "red"
+		},
+		"gas": {
+			"title": "Natural gas",
+			"fa": "fas fa-wind",
+			"color": "orange"
+		},
+		"oil": {
+			"title": "Crude oil",
+			"fa": "fas fa-oil-can",
+			"color": "black"
+		},
+		"renewable": {
+			"title": "Renewable energy",
+			"fa": "fas fa-fan",
+			"color": "green"
+		},
+		"other": {
+			"title": "Other",
+			"fa": "fas fa-water",
+			"color": "grey"
+		}
+	}
+}

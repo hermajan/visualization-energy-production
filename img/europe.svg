@@ -11,7 +11,7 @@
    height="453.91772"
    viewBox="1754 161 6504.0303 6935.3391"
    version="1.0"
-   id="svg2"
+   id="eu"
    sodipodi:version="0.32"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="europe.svg"
@@ -1357,7 +1357,7 @@ g.nationGroup, path        { fill:#C0C0C0; stroke:white; stroke-width:8; }
        inkscape:connector-curvature="0" />
   </g>
   <path
-     id="mt"
+     id="mt" class="eu europe"
      d="m 6867.1314,7941.1099 a 29.980005,29.980005 0 1 1 -59.96,0 29.980005,29.980005 0 1 1 59.96,0 z"
      transform="matrix(0.479868,0,0,0.477883,1847.7168,3151.9656)"
      style="fill:#000080;fill-opacity:1;stroke:#ffffff;stroke-width:8"

@@ -4,23 +4,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#1E448A">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<meta name="robots" content="">
+	<meta name="description" content="Energy production of European Union countries">
+	<meta name="author" content="hermajan">
+	<meta name="robots" content="all,follow">
 	
 	<title>Energy production</title>
 	
-	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="shortcut icon" href="./favicon.ico">
 	<link rel="stylesheet" media="screen" href="./dist/style.css">
 	<!--	<link rel="stylesheet" media="print" href="../css/print.css">-->
 </head>
 
 <body>
-<header id="header" class="navbar navbar-dark navbar-expand-md">
+<header id="header" class="navbar fixed-top navbar-dark navbar-expand-md">
 	<div class="container-fluid">
 		<nav class="navbar-header">
-			<a href="./index.html" class="navbar-brand">
-				<!--				<img src="favicon.ico" class="logo" alt="logo">-->Energy production of EU states</a>
+			<a href="./index.html" class="navbar-brand"> Energy production </a>
 			
 			<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="navbar-toggler-icon"></span>
@@ -28,283 +27,170 @@
 		</nav>
 		
 		<nav class="collapse navbar-collapse">
-<!--			<span class="navbar-text">Energy production of EU states.</span>-->
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="./index.html" class="nav-link"><i class="fas fa-home fa-lg"></i></a>
+				</li>
+				<li class="nav-item" id="nav-development">
+					<a href="#development" class="nav-link">Development</a>
+				</li>
+				<li class="nav-item" id="nav-countries">
+					<a href="#countries" class="nav-link">Countries</a>
+				</li>
+				<li class="nav-item" id="nav-data">
+					<a href="#data" class="nav-link">Data</a>
+				</li>
+			</ul>
 			
-<!--			<ul class="navbar-nav">-->
-<!--				<li class="nav-item active">-->
-<!--					<a class="nav-link" id="nav-country-tab" data-toggle="tab" href="#nav-country" role="tab" aria-controls="nav-country" aria-selected="true">Country</a>-->
-<!--				</li>-->
-<!--				<li class="nav-item">-->
-<!--					<a class="nav-link" id="nav-data-tab" data-toggle="tab" href="#nav-data" role="tab" aria-controls="nav-data" aria-selected="false">Data</a>-->
-<!--				</li>-->
-<!--				<li class="nav-item">-->
-<!--					<a class="nav-link" id="nav-development-tab" data-toggle="tab" href="#nav-development" role="tab" aria-controls="nav-development" aria-selected="false">Development</a>-->
-<!--				</li>-->
-<!--			</ul>-->
+			<div class="navbar-right">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="https://github.com/hermajan/visualization-energy" title="View this project on GitHub." class="nav-link github-link"><i class="fab fa-github fa-2x"></i></a>
+					</li>
+				</ul>
+			</div>
 		</nav>
 	</div>
 </header>
 
 <main id="main">
 	<div class="container-fluid">
-		<div class="row">
-			<article class="col-12" id="content">
-				<br>
-				<nav>
-					<div class="nav nav-tabs" id="nav-tab" role="tablist">
-						<a class="nav-item nav-link active" id="nav-country-tab" data-toggle="tab" href="#nav-country" role="tab" aria-controls="nav-country" aria-selected="true">Country</a>
-						<a class="nav-item nav-link" id="nav-data-tab" data-toggle="tab" href="#nav-data" role="tab" aria-controls="nav-data" aria-selected="false">Data</a>
-						<a class="nav-item nav-link" id="nav-development-tab" data-toggle="tab" href="#nav-development" role="tab" aria-controls="nav-development" aria-selected="false">Development</a>
-					</div>
-				</nav>
+		<section class="row">
+			<div class="col-12">
+				<h1 class="page-header">Energy production of European Union countries</h1>
+				<p class="lead">This visualization shows production of energy in European Union and its countries. Each energy type in this visualization is calculated as <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Primary_production_of_energy">primary production of energy</a> and it is based on production <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Tonnes_of_oil_equivalent_(toe)">per tonne of oil equivalent</a>. In "other" category are included natural gas liquids, additives and oxygenates (excluding biofuel portion), other hydrocarbons, peat, oil shale and oil sands, industrial waste (non-renewable) and non-renewable municipal waste.</p>
+				<p>It is divided into three parts:</p>
+				<ul>
+					<li>
+						<a href="#development">Development of the production</a>
+					</li>
+					<li>
+						<a href="#countries">Countries section with map</a>
+					</li>
+					<li>
+						<a href="#data">Data for each country</a>
+					</li>
+				</ul>
+				<p>Source of data is from <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Energy_production_and_imports">Eurostat</a>.</p>
+			</div>
+		</section>
+		
+		<article class="row" id="development">
+			<div class="col-12">
+				<h2>Development of the production</h2>
 				
-				<div class="tab-content" id="nav-tabContent">
-					<section class="tab-pane fade show active" id="nav-country" role="tabpanel" aria-labelledby="nav-country-tab">
-						<div class="row">
-							<div class="col-12 col-sm-8 col-md-9 col-lg-6" id="map">
-								<div class="svg" data-file="img/europe.svg"></div>
-								
-								<div>
-									<strong>Legend</strong>
-									<div><i class="fas fa-radiation"></i> Nuclear energy</div>
-									<div><i class="fas fa-fire"></i> Solid fossil fuels</div>
-									<div><i class="fas fa-wind"></i> Natural gas</div>
-									<div><i class="fas fa-oil-can"></i> Crude oil</div>
-									<div><i class="fas fa-fan"></i> Renewable energy</div>
-									<div><i class="fas fa-water"></i> Other</div>
-								</div>
-							</div>
-							<div class="col-12 col-sm-4 col-md-3 col-lg-6">
-								<h2 class="page-header">
-									<span id="country-title">Czechia</span>
-									<small class="text-muted">
-										<img src="img/flags/cz.svg" class="img-fluid flag" alt="flag">
-									</small>
-								</h2>
-								
-								<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus metus justo, sed iaculis urna rutrum ac. Sed rutrum, velit sit amet semper aliquam, libero quam pharetra orci, sed pretium quam ligula nec eros. Maecenas nisl mauris, varius nec dui sit amet, volutpat laoreet sapien. Morbi quis dapibus dolor. Ut pulvinar ipsum a nulla tristique placerat. Ut ac magna sapien. Mauris metus augue, scelerisque ac viverra in, dignissim vel urna. Aliquam vel imperdiet diam. Proin vitae enim sit amet mauris adipiscing mattis. Quisque pulvinar nisl felis, in auctor ante convallis sed.</p>
-								
-								<div class="table-responsive">
-									<table class="table" id="table-years">
-										<thead>
-											<tr>
-												<th colspan="2">Total production of primary energy</th>
-											</tr>
-											<tr>
-												<th>2007</th>
-												<th>2017</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>34,0</td>
-												<td>27,3</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								
-								<div class="table-responsive">
-									<table class="table" id="table-share">
-										<thead>
-											<tr>
-												<th colspan="6">Share of total production, 2017 (%)</th>
-											</tr>
-											<tr>
-												<th><i class="fas fa-radiation"></i> Nuclear energy</th>
-												<th><i class="fas fa-fire"></i> Solid fossil fuels</th>
-												<th><i class="fas fa-wind"></i> Natural gas</th>
-												<th><i class="fas fa-oil-can"></i> Crude oil</th>
-												<th><i class="fas fa-fan"></i> Renewable energy</th>
-												<th><i class="fas fa-water"></i> Other</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>25,7</td>
-												<td>55,5</td>
-												<td>0,7</td>
-												<td>0,4</td>
-												<td>16,3</td>
-												<td>1,5</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								
-								<div id="pie-share"></div>
-								<div id="myDiv"></div>
-								<img src="img/pie.png" alt="pie" class="img-fluid">
-							</div>
-						</div>
-					</section>
-					
-					<section class="tab-pane fade" id="nav-data" role="tabpanel" aria-labelledby="nav-data-tab">
-						<div class="table-responsive">
-							<table class="table" id="table-production">
-								<thead>
-									<tr>
-										<th rowspan="2">Country</th>
-										<th colspan="2">Total production of primary energy</th>
-										<th colspan="6">Share of total production, 2017 (%)</th>
-									</tr>
-									<tr>
-										<th>2007</th>
-										<th>2017</th>
-										<th><i class="fas fa-radiation"></i> Nuclear energy</th>
-										<th><i class="fas fa-fire"></i> Solid fossil fuels</th>
-										<th><i class="fas fa-wind"></i> Natural gas</th>
-										<th><i class="fas fa-oil-can"></i> Crude oil</th>
-										<th><i class="fas fa-fan"></i> Renewable energy</th>
-										<th><i class="fas fa-water"></i> Other</th>
-									</tr>
-								</thead>
-								<tbody>
-								</tbody>
-								<tfoot>
-								
-								</tfoot>
-							</table>
-						</div>
-					</section>
-					
-					<section class="tab-pane fade" id="nav-development" role="tabpanel" aria-labelledby="nav-development-tab">
-						<h2>Development of the production of primary energy</h2>
-						
-						<div class="table-responsive">
-							<table class="table">
-								<thead>
-									<tr>
-										<th></th>
-										<th>2007</th>
-										<th>2008</th>
-										<th>2009</th>
-										<th>2010</th>
-										<th>2011</th>
-										<th>2012</th>
-										<th>2013</th>
-										<th>2014</th>
-										<th>2015</th>
-										<th>2016</th>
-										<th>2017</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Total production</td>
-										<td>100,0</td>
-										<td>99,8</td>
-										<td>95,1</td>
-										<td>97,1</td>
-										<td>93,5</td>
-										<td>92,5</td>
-										<td>91,9</td>
-										<td>90,0</td>
-										<td>89,5</td>
-										<td>87,9</td>
-										<td>87,9</td>
-									</tr>
-									<tr>
-										<td>Renewable energy</td>
-										<td>100,0</td>
-										<td>107,1</td>
-										<td>112,9</td>
-										<td>124,7</td>
-										<td>123,1</td>
-										<td>135,8</td>
-										<td>145,5</td>
-										<td>148,0</td>
-										<td>154,5</td>
-										<td>158,4</td>
-										<td>165,6</td>
-									</tr>
-									<tr>
-										<td>Nuclear energy</td>
-										<td>100,0</td>
-										<td>100,2</td>
-										<td>94,5</td>
-										<td>97,0</td>
-										<td>96,0</td>
-										<td>92,9</td>
-										<td>92,3</td>
-										<td>92,5</td>
-										<td>91,1</td>
-										<td>88,3</td>
-										<td>87,2</td>
-									</tr>
-									<tr>
-										<td>Solid fossil fuels</td>
-										<td>100,0</td>
-										<td>95,7</td>
-										<td>89,3</td>
-										<td>87,7</td>
-										<td>89,3</td>
-										<td>89,7</td>
-										<td>82,8</td>
-										<td>79,3</td>
-										<td>77,5</td>
-										<td>71,0</td>
-										<td>69,5</td>
-									</tr>
-									<tr>
-										<td>Natural gas</td>
-										<td>100,0</td>
-										<td>101,7</td>
-										<td>91,6</td>
-										<td>93,7</td>
-										<td>83,8</td>
-										<td>78,3</td>
-										<td>77,2</td>
-										<td>69,4</td>
-										<td>63,1</td>
-										<td>63,1</td>
-										<td>60,6</td>
-									</tr>
-									<tr>
-										<td>Crude oil</td>
-										<td>100,0</td>
-										<td>93,1</td>
-										<td>87,9</td>
-										<td>82,3</td>
-										<td>72,1</td>
-										<td>64,9</td>
-										<td>61,0</td>
-										<td>59,9</td>
-										<td>64,0</td>
-										<td>62,6</td>
-										<td>61,1</td>
-									</tr>
-									<tr>
-										<td>Other</td>
-										<td>100,0</td>
-										<td>101,0</td>
-										<td>101,6</td>
-										<td>103,0</td>
-										<td>96,4</td>
-										<td>88,0</td>
-										<td>94,9</td>
-										<td>95,7</td>
-										<td>94,0</td>
-										<td>98,7</td>
-										<td>102,7</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						
-						<img src="img/development.jpg" alt="development" class="img-fluid">
-					</section>
+				<p>This table shows development of the production of primary energy by each energy type. It is counted in percents starting in year 2007 as 100 % and with growth or fall for each energy type to the year 2017. The values are based on the calculation of energy production per tonne of oil equivalent.</p>
+				
+				<div class="table-responsive">
+					<table class="table" id="table-development">
+						<thead>
+							<tr>
+								<th></th>
+								<th>2007</th>
+								<th>2008</th>
+								<th>2009</th>
+								<th>2010</th>
+								<th>2011</th>
+								<th>2012</th>
+								<th>2013</th>
+								<th>2014</th>
+								<th>2015</th>
+								<th>2016</th>
+								<th>2017</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
 				</div>
-			</article>
-		</div>
+				
+				<div id="graph-development"></div>
+			</div>
+		</article>
+		
+		<article class="row" id="countries">
+			<div class="col-12">
+				<h2>Countries</h2>
+				<p>Here on map you can select country for which you want to show total production and share of it.</p>
+			</div>
+			
+			<div class="col-12 col-sm-8 col-md-9 col-lg-6" id="map">
+				<div class="svg" data-file="img/europe.svg"></div>
+			</div>
+			
+			<div class="col-12 col-sm-4 col-md-3 col-lg-6">
+				<h3>
+					<span id="country-title">European Union</span> <small class="text-muted"> <img src="img/flags/eu.svg" class="img-fluid flag" alt="flag"> </small>
+				</h3>
+				
+				<h4>Total production of primary energy</h4>
+				<p>The values in this table are based on the calculation of energy production per tonne of oil equivalent.</p>
+				
+				<div class="table-responsive">
+					<table class="table" id="table-years">
+						<thead>
+							<tr>
+								<th>2007</th>
+								<th>2017</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+				
+				<h4>Share of total production</h4>
+				<p>In this table is shown share in percents for production of each energy type.</p>
+				<div class="table-responsive">
+					<table class="table" id="table-share">
+						<thead>
+							<tr>
+								<th><i class="fas fa-oil-can"></i> Crude oil</th>
+								<th><i class="fas fa-wind"></i> Natural gas</th>
+								<th><i class="fas fa-radiation"></i> Nuclear energy</th>
+								<th><i class="fas fa-fan"></i> Renewable energy</th>
+								<th><i class="fas fa-fire"></i> Solid fossil fuels</th>
+								<th><i class="fas fa-water"></i> Other</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+				
+				<div id="graph-share"></div>
+			</div>
+		</article>
+		
+		<article class="row" id="data">
+			<div class="col-12">
+				<h2>Data</h2>
+				<p>This table shows data for all European Union countries of total energy production per tonne of oil equivalent and its share from year 2017 in percentage.</p>
+				<div class="table-responsive">
+					<table class="table" id="table-data">
+						<thead>
+							<tr>
+								<th rowspan="2" class="border-right">Country</th>
+								<th colspan="2" class="border-right">Total production of primary energy</th>
+								<th colspan="6">Share of total production</th>
+							</tr>
+							<tr>
+								<th>2007</th>
+								<th class="border-right">2017</th>
+								<th><i class="fas fa-oil-can"></i> Crude oil</th>
+								<th><i class="fas fa-wind"></i> Natural gas</th>
+								<th><i class="fas fa-radiation"></i> Nuclear energy</th>
+								<th><i class="fas fa-fan"></i> Renewable energy</th>
+								<th><i class="fas fa-fire"></i> Solid fossil fuels</th>
+								<th><i class="fas fa-water"></i> Other</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+						<tfoot></tfoot>
+					</table>
+				</div>
+			</div>
+		</article>
 	</div>
 </main>
-
-<script src="./node_modules/d3/dist/d3.min.js"></script>
-<script src="./node_modules/plotly.js-dist/plotly.js"></script>
-<script src="./node_modules/jquery/dist/jquery.min.js"></script>
-<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="./node_modules/@hermajan/booty/js/booty.js"></script>
 <script src="./dist/script.js"></script>
 </body>
 </html>

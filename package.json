@@ -1,5 +1,5 @@
 {
-	"name": "visualization-energy",
+	"name": "@hermajan/visualization-energy",
 	"description": "visualization-energy",
 	"version": "1.0.0",
 	"author": "",
@@ -13,6 +13,9 @@
 		"@hermajan/booty": "https://github.com/hermajan/booty",
 		"@hermajan/facolors": "^0.1.0",
 		"d3": "^5.14.1",
+		"d3-queue": "^3.0.7",
+		"datatables.net": "^1.10.20",
+		"datatables.net-dt": "^1.10.20",
 		"express": "^4.17.1",
 		"jquery": "^3.4.0",
 		"plotly.js-dist": "^1.52.0"

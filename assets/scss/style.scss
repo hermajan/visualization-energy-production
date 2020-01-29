@@ -1,19 +1,49 @@
 @import "variables";
 @import "libraries";
 
+header {
+	.nav-item.active > .nav-link {
+		background-color: $eu-gold !important;
+		color: black !important;
+	}
+}
+
 main {
+	margin: $height-header auto 0 !important;
 	padding: 0 !important;
+}
+
+h2 {
+	margin-top: $height-header;
 }
 
 table {
 	th {
 		text-align: center;
-		vertical-align: middle;
+		vertical-align: middle !important;
 	}
 	
 	tfoot {
 		td {
 			font-style: italic;
+		}
+	}
+	
+	&#table-development {
+		th {
+			text-align: left !important;
+		}
+	}
+	
+	&#table-data {
+		td:first-child, td:nth-child(3), .border-right {
+			border-right: 1px solid #dee2e6;
+		}
+		
+		tfoot {
+			td {
+				padding: 0.75rem;
+			}
 		}
 	}
 }
@@ -41,14 +71,14 @@ table {
 	border: 1px solid black;
 }
 
-#nav-country {
+#countries {
 	.flag {
 		height: 2em;
 		float: right;
 	}
 }
 
-#nav-data {
+#data {
 	table {
 		.flag {
 			width: 2em;
@@ -64,21 +94,11 @@ table {
 	}
 }
 
-#pie-share {
-	//height: 500px;
-	
+#graph-share {
 	svg {
-		path {
-			stroke: white;
-			stroke-width: 4;
-		}
-		
 		text {
-			text-anchor: middle;
-			alignment-baseline: middle;
-			
 			tspan {
-				fill: black;
+				fill: white;
 			}
 		}
 	}
