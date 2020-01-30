@@ -1,8 +1,9 @@
 {
-	"name": "@hermajan/visualization-energy",
-	"description": "visualization-energy",
+	"name": "@hermajan/visualization-energy-production",
+	"description": "Visualization of energy production in EU",
 	"version": "1.0.0",
-	"author": "",
+	"author": "hermajan",
+	"repository": "https://github.com/hermajan/visualization-energy-production",
 	"license": "MIT",
 	"main": "index.js",
 	"scripts": {

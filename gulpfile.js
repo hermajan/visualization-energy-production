@@ -30,7 +30,7 @@ const files = {
 function sass() {
 	return gulp.src(files.scss.path)
 		.pipe(sourcemaps.init()) // initializes sourcemaps first
-		.pipe(gulpSass({outputStyle: "nested"}).on("error", gulpSass.logError)) // compiles SCSS to CSS and minifies CSS files
+		.pipe(gulpSass({outputStyle: "compressed"}).on("error", gulpSass.logError)) // compiles SCSS to CSS and minifies CSS files
 		.pipe(autoprefixer()) // adds vendor prefixes to CSS rules
 		.pipe(sourcemaps.write(".")) // writes sourcemaps file in current directory
 		.pipe(gulp.dest("dist")); // puts final CSS in dist folder
@@ -38,10 +38,10 @@ function sass() {
 
 // Concatenates and uglifies JS files
 function javascript() {
-	return gulp.src(files.js.libs, { sourcemaps: true, strict: true })
+	return gulp.src(files.js.libs, {sourcemaps: true, strict: true})
 		.pipe(concat("script.js"))
-		// 	.pipe(uglify())
-		.pipe(gulp.dest("dist", { sourcemaps: "." }));
+		.pipe(uglify())
+		.pipe(gulp.dest("dist", {sourcemaps: "."}));
 }
 
 // Watch SCSS and JS files for changes

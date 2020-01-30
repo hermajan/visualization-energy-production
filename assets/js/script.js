@@ -1,7 +1,9 @@
+// rounds numbers from csv data
 function rounding(number) {
 	return parseFloat(number.replace(",", ".")).toFixed(4);
 }
 
+// loading of data
 var countries, shares, totals, legend, developments;
 $.getJSON("data/legend.json", function(json) {
 	countries = json["countries"];
